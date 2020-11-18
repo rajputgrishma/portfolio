@@ -1,0 +1,19 @@
+/**
+-----
+----- Template Name : Brayn
+----- Version       : 1.0.0
+----- Author        : Wip Themes
+----- Author URL    : https://themeforest.net/user/wip-themes
+-----
+----- This file is used to load 3rd pary plugin css file(s)
+----- Place any plugin css here, so you don't need to edit all HTML files to apply the styles from the plugin
+-----
+*/
+
+@import url("smooth-scrollbar.css");
+
+@import url("leaflet.css");
+
+@import url("magnificPopup.css");
+
+@import url("swiper.min.css");

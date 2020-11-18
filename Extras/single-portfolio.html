@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en" class="no-js default-scroll">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="WIP Themes">
+
+	<!-- Favicon and mobile aplication icon settings -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">	
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
+
+	<!-- Title -->
+	<title>Single Portfolio &ndash; Brayn</title>
+
+	<!-- Javascript detection script -->
+	<script>
+		(function(html){'use strict';html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+	</script>
+
+	<!-- Google font(s) -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700i%7CSource+Sans+Pro:300,400,600,700" rel="stylesheet">
+	
+	<!-- Stylesheet (CSS) files -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/plugins.css">
+	<link rel="stylesheet" href="assets/css/site.css">
+	<link rel="stylesheet" href="assets/css/default-skin.css">
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery.min.js"></script>
+	
+	<!-- Ajax Progress script helper, need to add on top to make sure all animations smoothly executed -->
+	<script src="assets/js/pace.min.js"></script>
+	<script src="assets/js/brayn-firstload.js"></script>
+</head>
+
+<body>
+
+<!-- START PRELOADER (remove these line to disabled preloader) -->
+<div id="brayn-first-load">
+	<div class="bfl">
+		<div class="bfl-img">
+			<div class="bfl-img-render"></div>
+			<img src="assets/images/logo-light@2x.png" alt="Brayn preloader logo" />
+		</div>
+		<div class="bfl-prog">0%</div>
+	</div>
+</div>
+<!-- END PRELOADER -->
+
+<div id="site" class="page">
+	
+	<!-- ============================= ** HEADER ** ============================= -->
+	<header id="main-header" class="default-header">
+		<div class="header-ui">
+			
+			<!-- Brand (logo) and hamburger menu icon -->
+			<div class="brand--nav">
+				<a class="brand" href="index.html" rel="home">
+					<img src="assets/images/logo-light.png" srcset="assets/images/logo-light@2x.png 2x" alt="Brayn logo" />
+				</a>
+
+				<button class="hamburger__menu hamburger hamburger--spring" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+
+			<!-- new project button -->
+			<div class="header--complementary">
+				<a href="contact.html#start-project" class="button button-to-quote">Start a Project</a>
+			</div>
+
+		</div>
+	</header>
+	<!-- =========================== ** END HEADER ** =========================== -->
+
+	<!-- =========================== ** MAIN MENU ** =========================== -->
+	<div class="main-menu-container-wrap">
+		<div class="ui-menu-container">
+
+			<!-- MENU -->
+			<nav class="main-menu-container">
+				<ul id="brayn-menu" class="menu">
+					<!-- START MENU ITEMS -->
+					<li class="menu-item"><a href="index.html">Home</a>
+						<!-- SUB MENU -->
+						<ul class="sub-menu">
+							<li class="menu-item"><a href="index__youtube.html">Youtube Background</a></li>
+							<li class="menu-item"><a href="index__vimeo.html">Vimeo Background</a></li>
+							<li class="menu-item"><a href="index__minimal.html">Minimal</a></li>
+						</ul>
+						<!-- END SUB MENU -->
+					</li>
+					<li class="menu-item"><a href="about.html">About us</a></li>
+					<li class="menu-item"><a href="portfolio.html">Portfolio</a>
+						<!-- SUB MENU -->
+						<ul class="sub-menu">
+							<li class="menu-item"><a href="single-portfolio.html">Portfolio Detail Simple</a></li>
+							<li class="menu-item"><a href="single-portfolio-masonry.html">Masonry Gallery</a></li>
+							<li class="menu-item"><a href="single-portfolio-metro.html">Metro Gallery</a></li>
+							<li class="menu-item"><a href="single-portfolio-carousel.html">Carousel Gallery</a></li>
+						</ul>
+						<!-- END SUB MENU -->
+					</li>
+					<li class="menu-item"><a href="blog.html">Journal</a></li>
+					<li class="menu-item"><a href="contact.html">Contact</a></li>
+					<!-- END MENU ITEMS -->
+				</ul>
+			</nav>
+			<!-- END MENU -->
+
+			<!-- MENU WIDGET -->
+			<nav class="main-menu-widgets">
+				<!-- FIRST WIDGET -->
+				<div class="menu-widget">
+					<a class="menu-widget-block" href="team.html">
+						<div class="menu-widget-image">
+							<img src="media-placeholder/team.jpg" alt="team potrait" />
+						</div>
+						<h4>Meet the team</h4>
+					</a>
+				</div>
+				<!-- SECOND WIDGET -->
+				<div class="menu-widget">
+					<h4>Follow us</h4>
+					<ul class="menu-widget-list">
+						<li><a href="#" title="Follow us on twitter">Tw</a></li>
+						<li><a href="#" title="Follow us on Instagram">Ig</a></li>
+						<li><a href="#" title="Follow us on Facebook">Fb</a></li>
+						<li><a href="#" title="Follow us on Linkedin">in</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- END MENU WIDGET -->
+
+		</div>
+	</div>
+	<!-- ========================= ** END MAIN MENU ** ========================= -->
+
+	<div class="viewport">
+		<div id="scroll-viewport">
+
+		<!-- ============================= ** CONTENT ** ============================= -->
+		<main id="main" class="main-contain">
+			
+			<!-- Portfolio header -->
+			<section class="single-portfolio-header">	
+				<header>
+					<h1>Single Portfolio</h1>
+					<span class="portfolio-category">Branding / Experimental</span>
+				</header>
+
+				<!-- feature image / full screen background -->
+				<div class="portfolio-header-bg">
+					<img src="media-placeholder/hero-image.jpg" alt="portfolio header background" />
+				</div>
+			</section>
+
+			<!-- Project info -->
+			<section class="br-section has-sm-padding has-dark-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 text-center has-reveal-effect" data-effect="revealRight">
+							<h6 class="text-uppercase">Year</h6>
+							2017
+						</div>
+						<div class="col-md-4 text-center has-reveal-effect" data-effect="revealRight">
+							<h6 class="text-uppercase mt-5 mt-md-0">Client</h6>
+							Goboboble
+						</div>
+						<div class="col-md-4 text-center has-reveal-effect" data-effect="revealRight">
+							<h6 class="text-uppercase mt-5 mt-md-0">Role</h6>
+							Art direction, Brand identity
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Challenge -->
+			<section class="br-section">
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-lg-4 col-12">
+							<h3 class="br-font-bold-600 has-reveal-effect" data-effect="fadeInTop"><span class="numbering">01</span> The Challenge</h3>
+						</div>
+
+						<div class="col-lg-8 col-12">
+							<p class="lead br-font-normal has-dark-color">
+								The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+							</p>
+
+							<p>
+								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- full image block -->
+			<div class="has-reveal-effect" data-effect="revealRight">
+				<img src="media-placeholder/image02.jpg" alt="" />
+			</div>
+
+			<!-- Solution -->
+			<section class="br-section">
+				<div class="container">
+					
+					<div class="row">
+						<div class="col-md-6 d-md-flex align-items-md-center">
+							<div class="my-0 w-100">
+								<h3 class="br-font-bold-600 has-reveal-effect" data-effect="fadeInTop"><span class="numbering">02</span> The Solution</h3>
+
+								<p class="lead br-font-normal has-dark-color has-reveal-effect" data-effect="fadeInTop">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+
+								<p class="has-reveal-effect" data-effect="fadeInTop">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+							</div>
+						</div>
+
+						<div class="col-md-6 mt-5 mt-md-0">
+							<div class="image-wrapper has-reveal-effect" data-effect="revealTop">
+								<img src="media-placeholder/image.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Circle progress -->
+			<section class="br-section has-lightgray-bg">
+				<div class="container">
+
+					<h3 class="br-font-bold-600 text-center mb-5 has-reveal-effect" data-effect="revealRight"><span class="numbering">03</span> Technology Used</h3>
+
+					<div class="row">
+						
+						<div class="col-md-3 text-center">
+							<!--
+							// 
+							{
+								percent:80, 		 // progress percetage
+								background: #e4e4e4, // The color of empty space of circle
+								color: #ff9900,		 // The color of progress circle
+								size: medium 		 // {small || medium || big} please note: the final size will depend on the container parent size	
+							}
+							//
+							-->
+							<div class="br-circle-progress" data-progress='{"percent":"80","background":"#e4e4e4","color":"#ff9900","size":"medium"}'></div>
+							<strong>HTML 5</strong>
+						</div>
+
+						<div class="col-md-3 text-center mt-5 mt-md-0">
+							<div class="br-circle-progress" data-progress='{"percent":"90","background":"#e4e4e4","color":"#27c208","size":"medium"}'></div>
+							<strong>Javascript</strong>	
+						</div>
+
+						<div class="col-md-3 text-center mt-5 mt-md-0">
+							<div class="br-circle-progress" data-progress='{"percent":"60","background":"#e4e4e4","color":"#212121","size":"medium"}'></div>
+							<strong>CSS3</strong>	
+						</div>
+
+						<div class="col-md-3 text-center mt-5 mt-md-0">
+							<div class="br-circle-progress" data-progress='{"percent":"70","background":"#e4e4e4","color":"#e5a771","size":"medium"}'></div>
+							<strong>PHP</strong>
+						</div>
+
+						<div class="br-spacer spacer-lg"></div>
+
+						<div class="col-12 text-center">
+							<div class="br-circle-progress" data-progress='{"percent":"100","background":"#e4e4e4","color":"#eb1313","size":"big"}'></div>
+							<strong>Creativity</strong>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonial slide -->
+			<div class="br-section">
+				<div class="container">
+					
+					<div class="testimonial-carousel-contain swiper-container">
+						<div class="swiper-wrapper">
+
+							<!-- Slide 1 -->
+							<div class="swiper-slide">
+								<!-- Testimonial block -->
+								<figure class="br-testimonial">
+									<blockquote>
+										Brayn team is awesome! They did everything – with almost no time or effort for me! The best part was that I could completely trust their team to represent our company professionally with our clients.
+									</blockquote>
+
+									<img class="testimonial-person" src="media-placeholder/avatar.jpg" alt="" />
+									<figcaption>
+										<cite>Mark Jojoba</cite>
+										CEO of Rocket chicken
+									</figcaption>
+								</figure>
+							</div>
+
+							<!-- Slide 2 -->
+							<div class="swiper-slide">
+								<!-- Testimonial block -->
+								<figure class="br-testimonial">
+									<blockquote>
+										Their work on our website and Internet marketing has made a significant different to our business. We’ve seen a 425% increase in quote requests from the website which has been pretty remarkable – but I’d always like to see more!
+									</blockquote>
+
+									<img class="testimonial-person" src="media-placeholder/avatar.jpg" alt="" />
+									<figcaption>
+										<cite>Cecilia Obotoh</cite>
+										HR of Susuko
+									</figcaption>
+								</figure>
+							</div>
+
+							<!-- Slide 3 -->
+							<div class="swiper-slide">
+								<!-- Testimonial block -->
+								<figure class="br-testimonial">
+									<blockquote>
+										We were able to test our way from a 5% conversion rate, all the way up to 20%. Without driving any more traffic, our client is getting four times the leads that he was getting before.
+									</blockquote>
+
+									<img class="testimonial-person" src="media-placeholder/avatar.jpg" alt="" />
+									<figcaption>
+										<cite>Jhonny Iskandar</cite>
+										CEO of Dandodot
+									</figcaption>
+								</figure>
+							</div>
+							
+						</div>
+
+						<!-- Prev / Next button -->
+						<div class="testimonial-carousel-buttons">
+							<div class="testimonial-carousel-btn-prev">
+								<svg class="svg-icon" viewBox="0 0 20 20">
+									<path d="M18.271,9.212H3.615l4.184-4.184c0.306-0.306,0.306-0.801,0-1.107c-0.306-0.306-0.801-0.306-1.107,0
+									L1.21,9.403C1.194,9.417,1.174,9.421,1.158,9.437c-0.181,0.181-0.242,0.425-0.209,0.66c0.005,0.038,0.012,0.071,0.022,0.109
+									c0.028,0.098,0.075,0.188,0.142,0.271c0.021,0.026,0.021,0.061,0.045,0.085c0.015,0.016,0.034,0.02,0.05,0.033l5.484,5.483
+									c0.306,0.307,0.801,0.307,1.107,0c0.306-0.305,0.306-0.801,0-1.105l-4.184-4.185h14.656c0.436,0,0.788-0.353,0.788-0.788
+									S18.707,9.212,18.271,9.212z"></path>
+								</svg>
+							</div>
+							<div class="testimonial-carousel-btn-next">
+								<svg class="svg-icon" viewBox="0 0 20 20">
+									<path d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+									l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+									c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+									c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+									S1.293,9.212,1.729,9.212z"></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Next Project link -->
+			<section class="br-section has-no-padding has-lightgray-bg">
+				<div class="container">
+					
+					<div class="project-nav">
+						<a href="single-portfolio-masonry.html">
+							<h3>Next Project</h3>
+							<span class="project-nav-title">Portfolio - Masonry Gallery</span>
+						</a>
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<!-- =========================== ** END CONTENT ** =========================== -->
+
+		<!-- ============================= ** FOOTER ** ============================= -->
+		<footer id="br-site-footer" class="br-site-footer">
+			<div class="container">
+				<div class="row">
+                    <!-- First column -->
+					<div class="col-lg-6 col-md-4">
+						<div class="br-widget">
+							<img src="assets/images/logo-light.png" alt="Brayn logo" />
+							<address class="mt-5">
+								200 W Franklin St,
+								<br/>
+								Chapel Hill,
+								<br/>
+								NC 27516, USA
+								<br/>
+								<br/>
+								T: (310) 654 3210
+								<br/>
+								E: hello@brayn.template
+							</address>
+						</div>
+					</div>
+                    <!-- Second column -->
+					<div class="col-lg-3 col-md-4 mt-5 mt-md-0">
+						<div class="br-widget">
+							<ul class="footer-links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li><a href="portfolio.html">Projects</a></li>
+								<li><a href="blog.html">Journal</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+                    <!-- Third Column -->
+					<div class="col-lg-3 col-md-4 mt-5 mt-md-0">
+						<div class="br-widget">
+							<ul class="footer-links">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Instagram</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+                <!-- Copright & additional menu -->
+				<div class="footer-end">
+					<div class="row">
+						<div class="col-md-6 text-center text-md-left">
+							&copy;2019. Brayn All Right Reserved.
+						</div>
+
+						<div class="col-md-6 text-center text-md-right">
+							<a href="#">Privacy policy</a>
+							<a href="#site">Terms of service</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- =========================== ** END FOOTER ** =========================== -->
+
+		</div>
+	</div>
+
+</div><!-- END #site -->
+
+<!-- Scripts -->
+<script src="assets/js/plugins.js"></script>
+<script>
+/* <![CDATA[ */
+var braynOptions = {
+	"imgFilter" : "assets/images/clouds.jpg",
+	"transitDiv_bg" : '#212121',
+};
+/* ]]> */
+</script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en" class="no-js default-scroll">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="WIP Themes">
+
+	<!-- Favicon and mobile aplication icon settings -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">	
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
+
+	<!-- Title -->
+	<title>Single Blog Post &ndash; Brayn</title>
+
+	<!-- Javascript detection script -->
+	<script>
+		(function(html){'use strict';html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+	</script>
+
+	<!-- Google font(s) -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700i%7CSource+Sans+Pro:300,400,600,700" rel="stylesheet">
+	
+	<!-- Stylesheet (CSS) files -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/plugins.css">
+	<link rel="stylesheet" href="assets/css/site.css">
+	<link rel="stylesheet" href="assets/css/default-skin.css">
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery.min.js"></script>
+	
+	<!-- Ajax Progress script helper, need to add on top to make sure all animations smoothly executed -->
+	<script src="assets/js/pace.min.js"></script>
+	<script src="assets/js/brayn-firstload.js"></script>
+</head>
+
+<body>
+
+<!-- START PRELOADER (remove these line to disabled preloader) -->
+<div id="brayn-first-load">
+	<div class="bfl">
+		<div class="bfl-img">
+			<div class="bfl-img-render"></div>
+			<img src="assets/images/logo-light@2x.png" alt="Brayn preloader logo" />
+		</div>
+		<div class="bfl-prog"><div>0</div></div>
+	</div>
+</div>
+<!-- END PRELOADER -->
+
+<div id="site" class="page">
+	
+	<!-- ============================= ** HEADER ** ============================= -->
+	<header id="main-header" class="default-header">
+		<div class="header-ui">
+			
+			<!-- Brand (logo) and hamburger menu icon -->
+			<div class="brand--nav">
+				<a class="brand" href="index.html" rel="home">
+					<img src="assets/images/logo-light.png" srcset="assets/images/logo-light@2x.png 2x" alt="Brayn logo" />
+				</a>
+
+				<button class="hamburger__menu hamburger hamburger--spring" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+
+			<!-- new project button -->
+			<div class="header--complementary">
+				<a href="contact.html#start-project" class="button button-to-quote">Start a Project</a>
+			</div>
+
+		</div>
+	</header>
+	<!-- =========================== ** END HEADER ** =========================== -->
+
+	<!-- =========================== ** MAIN MENU ** =========================== -->
+	<div class="main-menu-container-wrap">
+		<div class="ui-menu-container">
+			
+			<!-- MENU -->
+			<nav class="main-menu-container">
+				<ul id="brayn-menu" class="menu">
+					<!-- START MENU ITEMS -->
+					<li class="menu-item"><a href="index.html">Home</a>
+						<!-- SUB MENU -->
+						<ul class="sub-menu">
+							<li class="menu-item"><a href="index__youtube.html">Youtube Background</a></li>
+							<li class="menu-item"><a href="index__vimeo.html">Vimeo Background</a></li>
+							<li class="menu-item"><a href="index__minimal.html">Minimal</a></li>
+						</ul>
+						<!-- END SUB MENU -->
+					</li>
+					<li class="menu-item"><a href="about.html">About us</a></li>
+					<li class="menu-item"><a href="portfolio.html">Portfolio</a>
+						<!-- SUB MENU -->
+						<ul class="sub-menu">
+							<li class="menu-item"><a href="single-portfolio.html">Portfolio Detail Simple</a></li>
+							<li class="menu-item"><a href="single-portfolio-masonry.html">Masonry Gallery</a></li>
+							<li class="menu-item"><a href="single-portfolio-metro.html">Metro Gallery</a></li>
+							<li class="menu-item"><a href="single-portfolio-carousel.html">Carousel Gallery</a></li>
+						</ul>
+						<!-- END SUB MENU -->
+					</li>
+					<li class="menu-item"><a href="blog.html">Journal</a></li>
+					<li class="menu-item"><a href="contact.html">Contact</a></li>
+					<!-- END MENU ITEMS -->
+				</ul>
+			</nav>
+			<!-- END MENU -->
+
+			<!-- MENU WIDGET -->
+			<nav class="main-menu-widgets">
+				<!-- FIRST WIDGET -->
+				<div class="menu-widget">
+					<a class="menu-widget-block" href="team.html">
+						<div class="menu-widget-image">
+							<img src="media-placeholder/team.jpg" alt="team potrait" />
+						</div>
+						<h4>Meet the team</h4>
+					</a>
+				</div>
+				<!-- SECOND WIDGET -->
+				<div class="menu-widget">
+					<h4>Follow us</h4>
+					<ul class="menu-widget-list">
+						<li><a href="#" title="Follow us on twitter">Tw</a></li>
+						<li><a href="#" title="Follow us on Instagram">Ig</a></li>
+						<li><a href="#" title="Follow us on Facebook">Fb</a></li>
+						<li><a href="#" title="Follow us on Linkedin">in</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- END MENU WIDGET -->
+
+		</div>
+	</div>
+	<!-- ========================= ** END MAIN MENU ** ========================= -->
+
+	<div class="viewport">
+		<div id="scroll-viewport">
+
+		<!-- ============================= ** CONTENT ** ============================= -->
+		<main id="main" class="main-contain">
+			<div class="container">
+
+			<div class="single-post-contain">
+
+				<article class="single-post">
+					
+					<header class="entry-header">
+						<span class="cat-links"><a href="#">Technology</a> &#47; <a href="#">Review</a></span>
+						<h1 class="entry-title">Pixi.js vs Three.js, a deep comparision in review.</h1>
+					</header>
+
+					<footer class="entry-meta">
+						<span class="author vcard"><a href="#">Brayn</a></span>
+						<span class="meta-separator">&#47;</span>
+						<span class="entry-date published updated">Jan 02, 2019</span>
+					</footer>
+
+					<div class="post-featured-image">
+						<img src="media-placeholder/image02.jpg" alt="featured image" />
+					</div>
+
+					<div class="post-content-contain">
+						<p class="lead br-font-normal has-dark-color">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+						</p>
+
+						<p class="has-drop-cap">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+						</p>
+
+						<blockquote>
+							<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
+							<cite>Jhonny Block</cite>
+						</blockquote>
+
+						<h3>This is not WordPress, isn't it?</h3>
+						
+						<p>
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+						</p>
+						
+						<p>
+							All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+						</p>
+
+						<!-- tag links -->
+						<div class="tag-links">
+							<a href="#">Technology</a>
+							<a href="#">Review</a>
+							<a href="https://webinpixels.local/wanipiro/tag/wonderful/">WebGL</a>
+						</div>
+
+						<!-- About the author -->
+						<div class="post-author-box">
+							<h3 class="post-author-heading">About the author</h3>
+
+							<div class="author-desc">
+								<img class="avatar" src="media-placeholder/avatar.jpg" alt="avatar image" />
+								<h6>Brayn Evan</h6>
+								<p>
+									Stories worth reading about programming and technology from our open source community.
+									The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+				</article>
+
+				<!-- Comments based on WP-comment mark-up -->
+				<div id="comments" class="comments-area">
+					<div class="comments-inner">
+						
+						<header class="comments-title-header">
+							<h3 class="comments-title">
+								<!-- SVG icon (you might change with icon font etc) -->
+								<svg width="24" height="24" viewBox="0 0 20 20">
+									<path d="M12.871,9.337H7.377c-0.304,0-0.549,0.246-0.549,0.549c0,0.303,0.246,0.55,0.549,0.55h5.494  c0.305,0,0.551-0.247,0.551-0.55C13.422,9.583,13.176,9.337,12.871,9.337z M15.07,6.04H5.179c-0.304,0-0.549,0.246-0.549,0.55 c0,0.303,0.246,0.549,0.549,0.549h9.891c0.303,0,0.549-0.247,0.549-0.549C15.619,6.286,15.373,6.04,15.07,6.04z M17.268,1.645 H2.981c-0.911,0-1.648,0.738-1.648,1.648v10.988c0,0.912,0.738,1.648,1.648,1.648h4.938l2.205,2.205l2.206-2.205h4.938 c0.91,0,1.648-0.736,1.648-1.648V3.293C18.916,2.382,18.178,1.645,17.268,1.645z M17.816,13.732c0,0.607-0.492,1.1-1.098,1.1 h-4.939l-1.655,1.654l-1.656-1.654H3.531c-0.607,0-1.099-0.492-1.099-1.1v-9.89c0-0.607,0.492-1.099,1.099-1.099h13.188 c0.605,0,1.098,0.492,1.098,1.099V13.732z"></path>
+								</svg>
+
+								3 Comments
+							</h3>
+						</header>
+
+						<div id="comment-contain-container">
+							<ol class="comment-list">
+								
+								<li class="comment">
+									
+									<div class="comment-body">
+										<footer class="comment-meta">
+											
+											<div class="comment-author vcard">
+												<img alt="" src="media-placeholder/avatar.jpg" class="avatar">
+												<b class="fn">Angela</b> <span class="says">says:</span>
+											</div>
+											<!-- .comment-author -->
+
+											<div class="comment-metadata">
+												<span>Feb 14, 2019 at 1:31 am</span>
+											</div>
+											<!-- .comment-metadata -->
+
+										</footer>
+										<!-- .comment-meta -->
+
+										<div class="comment-content">
+											<p>Wow, really nice concept! Love this</p>
+										</div>
+										<!-- .comment-content -->
+
+										<div class="reply">
+											<a rel="nofollow" class="comment-reply-link" href="#">
+												<!-- SVG icon (you might change with icon font etc) -->
+												<svg width="18" height="18" viewBox="0 0 20 20">
+													<path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
+												</svg>
+											</a>
+										</div>
+										<!-- .reply -->
+									</div>
+									<!-- .comment-body -->
+
+									<!-- COMMENT REPLY -->
+									<ol class="children">
+										<li class="comment">
+											<div class="comment-body">
+												<footer class="comment-meta">
+													
+													<div class="comment-author vcard">
+														<img alt="" src="media-placeholder/avatar.jpg" class="avatar">
+														<b class="fn">Bornapo</b> <span class="says">says:</span>
+													</div>
+													<!-- .comment-author -->
+
+													<div class="comment-metadata">
+														<span>Feb 16, 2019 at 7:14 am</span>
+													</div>
+													<!-- .comment-metadata -->
+
+												</footer>
+												<!-- .comment-meta -->
+
+												<div class="comment-content">
+													<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+												</div>
+												<!-- .comment-content -->
+
+												<div class="reply">
+													<a rel="nofollow" class="comment-reply-link" href="#">
+														<!-- SVG icon (you might change with icon font etc) -->
+														<svg width="18" height="18" viewBox="0 0 20 20">
+															<path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
+														</svg>
+													</a>
+												</div>
+												<!-- .reply -->
+											</div>
+											<!-- .comment-body -->
+										</li>
+									</ol>
+									<!-- END COMMENT REPLY -->
+
+								</li>
+								<!-- #comment-## -->
+
+								<li class="comment">
+									<div class="comment-body">
+										<footer class="comment-meta">
+											
+											<div class="comment-author vcard">
+												<img alt="" src="media-placeholder/avatar.jpg" class="avatar">
+												<b class="fn">Belgedes</b> <span class="says">says:</span>
+											</div>
+											<!-- .comment-author -->
+
+											<div class="comment-metadata">
+												<span>Feb 12, 2019 at 3:56 am</span>
+											</div>
+											<!-- .comment-metadata -->
+
+										</footer>
+										<!-- .comment-meta -->
+
+										<div class="comment-content">
+											<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+										</div>
+										<!-- .comment-content -->
+
+										<div class="reply">
+											<a rel="nofollow" class="comment-reply-link" href="#">
+												<!-- SVG icon (you might change with icon font etc) -->
+												<svg width="18" height="18" viewBox="0 0 20 20">
+													<path d="M3.24,7.51c-0.146,0.142-0.146,0.381,0,0.523l5.199,5.193c0.234,0.238,0.633,0.064,0.633-0.262v-2.634c0.105-0.007,0.212-0.011,0.321-0.011c2.373,0,4.302,1.91,4.302,4.258c0,0.957-0.33,1.809-1.008,2.602c-0.259,0.307,0.084,0.762,0.451,0.572c2.336-1.195,3.73-3.408,3.73-5.924c0-3.741-3.103-6.783-6.916-6.783c-0.307,0-0.615,0.028-0.881,0.063V2.575c0-0.327-0.398-0.5-0.633-0.261L3.24,7.51 M4.027,7.771l4.301-4.3v2.073c0,0.232,0.21,0.409,0.441,0.366c0.298-0.056,0.746-0.123,1.184-0.123c3.402,0,6.172,2.709,6.172,6.041c0,1.695-0.718,3.24-1.979,4.352c0.193-0.51,0.293-1.045,0.293-1.602c0-2.76-2.266-5-5.046-5c-0.256,0-0.528,0.018-0.747,0.05C8.465,9.653,8.328,9.81,8.328,9.995v2.074L4.027,7.771z"></path>
+												</svg>
+											</a>
+										</div>
+										<!-- .reply -->
+									</div>
+									<!-- .comment-body -->
+								</li>
+								<!-- #comment-## -->
+
+							</ol>
+
+						</div>
+						<!-- #comment-contain-container -->
+
+						<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
+
+							<form action="#" method="post" id="commentform" class="comment-form">
+								<p class="comment-form-comment">
+									<textarea id="comment" name="comment" cols="45" rows="8" placeholder="Write a response" aria-required="true"></textarea>
+								</p>
+
+								<p class="comment-form-author">
+									<label for="author">Name <span class="required">*</span></label>
+									<input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required">
+								</p>
+
+								<p class="comment-form-email">
+									<label for="email">Email <span class="required">*</span></label>
+									<input id="email" name="email" type="email" value="" size="30" maxlength="100" required="required">
+								</p>
+
+								<p class="form-submit">
+									<input name="submit" type="submit" id="submit" class="submit" value="Submit">
+								</p>
+							</form>
+						</div>
+						<!-- #respond -->
+					
+					</div>
+					<!-- .comments-inner -->
+
+				</div>
+				<!-- #comments -->
+			
+			</div>
+			<!-- .single-post-contain -->
+
+			</div>
+		</main>
+		<!-- =========================== ** END CONTENT ** =========================== -->
+
+		<!-- ============================= ** FOOTER ** ============================= -->
+		<footer id="br-site-footer" class="br-site-footer">
+			<div class="container">
+				<div class="row">
+                    <!-- First column -->
+					<div class="col-lg-6 col-md-4">
+						<div class="br-widget">
+							<img src="assets/images/logo-light.png" alt="Brayn logo" />
+							<address class="mt-5">
+								200 W Franklin St,
+								<br/>
+								Chapel Hill,
+								<br/>
+								NC 27516, USA
+								<br/>
+								<br/>
+								T: (310) 654 3210
+								<br/>
+								E: hello@brayn.template
+							</address>
+						</div>
+					</div>
+                    <!-- Second column -->
+					<div class="col-lg-3 col-md-4 mt-5 mt-md-0">
+						<div class="br-widget">
+							<ul class="footer-links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About us</a></li>
+								<li><a href="portfolio.html">Projects</a></li>
+								<li><a href="blog.html">Journal</a></li>
+								<li><a href="contact.html">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+                    <!-- Third Column -->
+					<div class="col-lg-3 col-md-4 mt-5 mt-md-0">
+						<div class="br-widget">
+							<ul class="footer-links">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Instagram</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+                <!-- Copright & additional menu -->
+				<div class="footer-end">
+					<div class="row">
+						<div class="col-md-6 text-center text-md-left">
+							&copy;2019. Brayn All Right Reserved.
+						</div>
+
+						<div class="col-md-6 text-center text-md-right">
+							<a href="#">Privacy policy</a>
+							<a href="#site">Terms of service</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- =========================== ** END FOOTER ** =========================== -->
+
+		</div>
+	</div>
+
+</div><!-- END #site -->
+
+<!-- Scripts -->
+<script src="assets/js/plugins.js"></script>
+<script>
+/* <![CDATA[ */
+var braynOptions = {
+	"imgFilter" : "assets/images/clouds.jpg",
+	"transitDiv_bg" : '#212121',
+};
+/* ]]> */
+</script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
